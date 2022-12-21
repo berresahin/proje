@@ -1,0 +1,353 @@
+#include <stdio.h>
+
+void final()
+{
+    printf("\n\n TEBRİKLER TESTİ BAŞARIYLA TAMAMLADINIZ. HAYIRLI UĞURLU OLSUN. MUSMUTLU KALIN :)");
+}
+
+struct kullanici
+{
+    char ad[10];
+    char soyad[10];
+    char cinsiyet[10];
+}k;
+
+int main()
+{
+    int puan[11];
+
+    printf("ad:");
+    scanf("%s",&k.ad);
+
+    printf("soyad:");
+    scanf("%s",&k.soyad);
+
+    printf("cinsiyet:");
+    scanf("%s",&k.cinsiyet);
+
+    printf("merhaba\n adınız:\n%s",k.ad);
+    printf("soyadınız:%s\n",k.soyad);
+    printf("cinsiyetiniz:%s\n\n",k.cinsiyet);
+
+    int sonuc;
+    printf("**1.soru** \n");
+    printf("Öncelikle şunu söyle: Kahvaltıyla aran nasıl?\n");
+    printf("1) Her zaman iyi bir kahvaltı yapmaya çalışırım.\n");
+    printf("2) Poğaça simmit falan atıştırıyorum.\n");
+    printf("3) Çoğunlukla sigara kahve.\n");
+    printf("4) Değişiyor ama kahvaltısız güne başlamak istemem.\n");
+
+    printf("\nCevabınızı seçiniz:");
+    scanf("%d",&sonuc);
+
+    puan[0]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("Her zaman iyi bir kahvaltı yapmaya çalışırım.\n\n");
+        break;
+    case 2: printf("Poğaça simmit falan atıştırıyorum.\n\n");
+        break;
+    case 3: printf("Çoğunlukla sigara kahve.\n\n");
+        break;
+    case 4: printf("Değişiyor ama kahvaltısız güne başlamak istemem.\n\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek verin.\n\n");
+        break;
+    }
+
+    printf("**2. soru** \n");
+    printf("Söyle bakalım çikolata ile aran nasıl?\n");
+    printf("1) Offf. BAYILIRIMMM.\n");
+    printf("2) Çikolata sevmeyen mi var aga.\n");
+    printf("3) Severim. Arada yerim.\n");
+    printf("4) Hiç sevmem.\n");
+
+    printf("Cevabınızı seçiniz:");
+    scanf("%d",&sonuc);
+
+    puan[1]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("Offf. BAYILIRIMMM.\n\n");
+        break;
+    case 2: printf("Çikolata sevmeyen mi var aga.\n\n");
+        break;
+    case 3: printf("Severim. Arada yerim.\n\n");
+        break;
+    case 4: printf("Hiç sevmem.\n\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek seçin.\n\n");
+        break;
+    }
+
+    printf("**3. soru** \n");
+    printf("Hangisi seni daha çok acıktırıyor?\n");
+    printf("1) Mangaldaki etin yağının ateşe düşünce çıkardığı o cızırtıııı.\n");
+    printf("2) Kızaran tavuk.\n");
+    printf("3) Üzerine sos dökülen haşlanmış sebzeler.\n");
+    printf("4) Beni her şey acıktırır.\n");
+
+    printf("Cevabınızı seçiniz:");
+    scanf("%d",&sonuc);
+
+    puan[2]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("Mangaldaki etin yağının ateşe düşünce çıkardığı o cızırtıııı.\n\n");
+        break;
+    case 2: printf("Kızaran tavuk.\n\n");
+        break;
+    case 3: printf("Üzerine sos dökülen haşlanmış sebzeler.\n\n");
+        break;
+    case 4: printf("Beni her şey acıktırır.\n\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek seçin.\n\n");
+        break;
+    }
+
+    printf("**4. soru** \n");
+    printf("Peki şimdi ocalbaşına gittik. Ne yesek?\n");
+    printf("1) Kuzu şiş\n");
+    printf("2) Adana\n");
+    printf("3) Patlıcan kebabı\n");
+    printf("4) Biftek\n");
+    printf("5) Kaburga\n");
+    printf("6) Pirzola\n");
+
+    printf("\n Ceavbınızı seçiniz:");
+    scanf("%d",&sonuc);
+
+    puan[3]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("Kuzu şiş\n\n");
+        break;
+    case 2: printf("Adana\n\n");
+        break;
+    case 3: printf("Patlıcan kebabı\n\n");
+        break;
+    case 4: printf("Biftek\n\n");
+        break;
+    case 5:  printf("Kaburga\n\n");
+        break;
+    case 6: printf("Pirzola\n\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek seçin.\n\n");
+        break;
+    }
+
+    printf("**5. soru** \n");
+    printf("Hmmm pilavın yanında ayran içilir mi?\n");
+    printf("1) Evet.\n");
+    printf("2)Hayır.\n");
+    printf("3) Fark etmez varsa göm gitsin.\n");
+
+    printf("\nCevabınızı seçiniz:");
+    scanf("%d",&sonuc);
+
+    puan[4]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("1) Evet.\n")
+        break;
+    case 2: printf("2)Hayır.\n");
+        break;
+    case 3: printf("3) Fark etmez varsa göm gitsin.\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek seçin.\n\n");
+        break;
+    }
+
+    printf("**6. soru** \n");
+    printf("Pilav nasıl olur?\n");
+    printf("1) Nohutlu\n");
+    printf("2) Şehriyeli\n");
+    printf("3) Kuru pilav\n");
+    printf("4) Sebzeli\n");
+    printf("5) Tavuklu\n");
+
+    printf("\nCevabınızı seçiniz:");
+    scanf("%d",&sonuc);
+
+    puan[5]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("1) Nohutlu\n");
+        break;
+    case 2: printf("2) Şehriyeli\n");
+        break;
+    case 3: printf("3) Kuru pilav\n");
+        break;
+    case 4: printf("4) Sebzeli\n");
+        break;
+    case 5: printf("5) Tavuklu\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek seçin.\n\n");
+        break;
+    }    
+
+    printf("**7. soru** \n\n");
+    printf("Ne zaman fast food siparişi verirsin?\n");
+    printf("1) Haftasonu dışarı çıktığımda.\n");
+    printf("2) Hafta içi okuldan sonra.\n");
+    printf("3) Hafta içi okuldayken.\n");
+
+    printf("\nCevabınızı seçiniz:");
+    scanf("%d",&sonuc);
+
+    puan[6]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("Haftasonu dışarı çıktığımda.\n\n");
+        break;
+    case 2: printf("Hafta içi okuldan sonra.\n\n");
+        break;
+    case 3: printf("Hafta içi okuldayken.\n\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek seçin.\n");
+        break;
+    }
+
+    printf("**8. soru** \n\n");
+    printf("Peki fast food ürünlerini nasıl tüketmeyi tercih edersin?\n");
+    printf("1) Eve söylerim genelde.\n");
+    printf("2) Dışarı çıkıp yerinde yerim.\n");
+    
+    printf("\nCevabınzı seçiniz:");
+    scanf("&d",&sonuc);
+
+    puan[7]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("1) Eve söylerim genelde.\n");
+        break;
+    case 2: printf("2) Dışarı çıkıp yerinde yerim.\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek seçin.\n");
+        break;
+    }
+
+    printf("**9. soru** \n\n");
+    printf("Yemekten önce tatlı yenir mi?\n");
+    printf("1) Tatlının zamanı mı olur tabiki evet.\n");
+    printf("2) Ay yok.\n");
+    
+    printf("\nCevabınızı seçiniz:");
+    scanf("%d",&sonuc);
+
+    puan[8]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("Tatlının zamanı mı olur tabiki evet.\n\n");
+        break;
+    case 2: printf("Ay yok.\n\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek seçin.\n");
+        break;
+    }
+
+    printf("**10. soru** \n\n");
+    printf("Bu kadar soru cevapladıktan sonra söyle bakalım. Açıklık tokluk durumları nasıl?\n");
+    printf("1) Açtım iyice acıktım.ABV editör.\n");
+    printf("2) Aç değildim ama şu an kurt gibi açım.\n");
+    printf("3) Bir değişiklik olmadı.\n");
+
+    printf("\nCevabınızı seçiniz.");
+    scanf("&d",&sonuc);
+
+    puan[9]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("1) Açtım iyice acıktım.ABV editör.\n");
+        break;
+    case 2: printf("2) Aç değildim ama şu an kurt gibi açım.\n");
+        break;
+    case 3: printf("3) Bir değişiklik olmadı.\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek seçin.\n");
+        break;
+    }
+
+    printf("**11. soru** \n\n");
+    printf("İlk buluşmada her şey yenir mi?\n");
+    printf("1) Buluştuğum kişiye göre değişir.\n");
+    printf("2) Ben yerim. Beni doğru tanısın.\n");
+    printf("3) Sos ağzıma burnuma bulaşır. Hiççç gerek yok.\n");
+    printf("4) Yaaaa deli misin. Her şeyi yerim ben <3\n");
+
+    printf("\nCevabınızı seçiniz:");
+    scanf("%d",&sonuc);
+
+    puan[10]=sonuc;
+
+    switch (sonuc)
+    {
+    case 1: printf("1) Buluştuğum kişiye göre değişir.\n");
+        break;
+    case 2: printf("2) Ben yerim. Beni doğru tanısın.\n");
+        break;
+    case 3: printf("3) Sos ağzıma burnuma bulaşır. Hiççç gerek yok.\n");
+        break;
+    case 4: printf("4) Yaaaa deli misin. Her şeyi yerim ben <3\n");
+        break;
+    default: printf("Lütfen geçerli bir seçenek seçin.\n\n\n");
+        break;
+    }
+
+    printf("*****\n\n");
+    int toplam=0;
+    for(int i=0; i<=10; i++)
+    {
+        toplam+=puan[i];
+    }
+
+    printf("Puanınız:%d\n",toplam);
+    printf("SONUCUNUZ\n");
+    
+    if(sonuc==1)
+    {
+        printf("İşle güçle kafayı bozmuşsun!\n")
+        printf("Yok terfi edebilecek misin? Yok acaba başka şirkete geçsen daha mı iyi olur?
+        Ofiste kimler kuyunu kazıyor, kimler seni çekemiyor, bu işe daha ne kadar kendini
+        adayacaksın...İşte bunlar senin uykunu kaçıran yegane dertler. Böyle giderse kendi
+        işini kurarsın ama yine o uykular kaçacak. Tam bir kariyeristsin. Ne olacak bu halin
+        hiç bilmiyoruz. Ailenle bile sadece bunları konuşmaya başladın. Üç günlük dünya,
+        her türlü karnını doyurursun. Neden bu kadar mahvediyorsun kendini gerçekten
+        anlamıyoruz... Gerçi aramızda en çok para kazanacak olan da sensin. Kıskanıyor 
+        olabiliriz.\n");
+    }
+
+    else if(sonuc==3)
+    {
+        printf("Herkesin derdi senin derdin olmuş! \n");
+        printf("Serhan neden karısından boşanıyor, Taylan'ın yeni işindeki en büyük 
+        sıkıntısı ne, Pelin'in kıskanç eltisi en son Pelin'e ne zaman oturmaya gelmiş. 
+        İşte bunların hepsi senin derdin. Bütün arkadaşlarının derdinin peşinde harap 
+        olacaksın. Telefonun hiç susmuyor, maşallah. Herkes her an sana rapor veriyor. 
+        Biraz da kendi derdine tasalan minnoş. Azıcık da meraklısın galiba, son havadisleri
+        almasan da çatlıyorsun.\n");
+    }
+
+    else if(sonuc==4)
+{
+    printf("Dünya yıkılsa umurunda değil! \n");
+    printf("Dünya yıkılsa umurunda değil. Kim ne hali varsa görsün. Onlarla mı uğraşacaksın.
+    Azıcık aşın dertsiz başın. Sen yüz yaşını görürsün. Diğerleri 40'ında hemen hastalıklarla
+    uğraşmaya başlayacaklar. Sen 40'ında 30 göstereceksin. Örnek alınması gereken bir insansın.
+    Allah herkese senin gibi bir boş vermişlik ve genişlik versin. Hepimiz sana imreniyoruz. En 
+    akıllımız sensin. \n\n\n\n");
+}
+    final()
+    return 0;
+
+}
